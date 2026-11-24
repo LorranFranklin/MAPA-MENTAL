@@ -3,7 +3,12 @@ import app from './app.js';
 
 const port = process.env.PORT ?? 3000;
 
-// Na Vercel a pasta public/ é servida pela plataforma; localmente fazemos isso aqui.
+// Serve os arquivos da pasta public (HTML, CSS, JS do front-end)
 app.use(express.static('public'));
 
-app.listen(port, () => console.log(`Servidor em http://localhost:${port}`));
+// Inicia localmente se não estiver na Vercel
+if (!process.env.VERCEL) {
+  app.listen(port, () => console.log(`Servidor em http://localhost:${port}`));
+}
+
+export default app;
