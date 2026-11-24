@@ -1,9 +1,21 @@
+// {
+//   "name": "mapa-mental",
+//   "private": true,
+//   "type": "module",
+//   "scripts": {
+//     "dev": "node --watch src/dev.js",
+//     "test": "node --test"
+//   },
+//   "dependencies": {
+//     "express": "^5.3.0"
+//   }
+// }
 {
   "name": "mapa-mental",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node --watch src/dev.js",
+    "start": "node src/index.js",
     "test": "node --test"
   },
   "dependencies": {
