@@ -1,37 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mapa mental — Compreensão e Interpretação de Textos</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <script type="module" src="js/main.js"></script>
-</head>
-<body>
-  <header class="header">
-    <h1>Compreensão e Interpretação de Textos — Mapa mental</h1>
-    <p class="hint">Clique em um item com seta (›) para abrir ou fechar suas características.</p>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mapa mental — Compreensão e Interpretação de Textos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Compreensão e Interpretação de Textos — Mapa mental</h1>
+      <p class="hint">
+        Clique em um item com seta (›) para abrir ou fechar suas
+        características.
+      </p>
+    </header>
 
-  <div class="toolbar" role="toolbar" aria-label="Ações do mapa">
-    <button type="button" class="btn" data-cmd="expand-all">Expandir tudo</button>
-    <button type="button" class="btn" data-cmd="collapse-all">Recolher tudo</button>
-    <button type="button" class="btn" data-cmd="toggle-edit" aria-pressed="false">Modo edição</button>
-    <button type="button" class="btn" data-cmd="open-io">Salvar / carregar dados</button>
-    <button type="button" class="btn" data-cmd="reset">Restaurar original</button>
-  </div>
-  <p id="status" class="status" role="status"></p>
-
-  <section id="io-panel" class="panel" hidden>
-    <p>Copie o texto abaixo para ter um backup. Para restaurar, cole de volta e clique em Aplicar.</p>
-    <textarea id="io-text" spellcheck="false" aria-label="Dados do mapa"></textarea>
-    <div class="row">
-      <button type="button" class="btn" data-cmd="apply-io">Aplicar texto</button>
-      <button type="button" class="btn" data-cmd="close-io">Fechar</button>
-      <span id="io-message" role="status"></span>
+    <div class="toolbar" role="toolbar" aria-label="Ações do mapa">
+      <button type="button" class="btn" data-cmd="expand-all">
+        Expandir tudo
+      </button>
+      <button type="button" class="btn" data-cmd="collapse-all">
+        Recolher tudo
+      </button>
+      <button
+        type="button"
+        class="btn"
+        data-cmd="toggle-edit"
+        aria-pressed="false"
+      >
+        Modo edição
+      </button>
+      <button type="button" class="btn" data-cmd="open-io">
+        Salvar / carregar dados
+      </button>
+      <button type="button" class="btn" data-cmd="reset">
+        Restaurar original
+      </button>
     </div>
-  </section>
+    <p id="status" class="status" role="status"></p>
 
-  <main class="canvas"><div id="tree" class="tree"></div></main>
-</body>
+    <section id="io-panel" class="panel" hidden>
+      <p>
+        Copie o texto abaixo para ter um backup. Para restaurar, cole de volta e
+        clique em Aplicar.
+      </p>
+      <textarea
+        id="io-text"
+        spellcheck="false"
+        aria-label="Dados do mapa"
+      ></textarea>
+      <div class="row">
+        <button type="button" class="btn" data-cmd="apply-io">
+          Aplicar texto
+        </button>
+        <button type="button" class="btn" data-cmd="close-io">Fechar</button>
+        <span id="io-message" role="status"></span>
+      </div>
+    </section>
+
+    <main class="canvas"><div id="tree" class="tree"></div></main>
+  </body>
 </html>
