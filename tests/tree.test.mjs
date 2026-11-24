@@ -8,7 +8,7 @@ import {
   removeNode,
   renameNode,
   toPlain,
-} from '../js/tree.js';
+} from '../public/js/tree.js';
 
 const sample = () => fromOutline('R', [['A', [['A1'], ['A2']]], ['B']]);
 

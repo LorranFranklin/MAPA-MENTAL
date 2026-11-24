@@ -3,7 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test",
-    "serve": "python3 -m http.server 8000"
+    "dev": "node --watch src/dev.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
   }
 }
